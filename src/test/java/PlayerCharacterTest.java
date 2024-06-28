@@ -7,13 +7,13 @@ class PlayerCharacterTest {
     @Test
     public void getXTest_whenStart_thenReturn0() {
         //Given
-        boolean start = true;
+        int x = 0;
 
         //When
-        int actual = getX(start);
+        int actual = PlayerCharacter.getX();
 
         //Then
-        assertEquals(actual, 0);
+        assertEquals( 0,actual);
     }
 
 }
