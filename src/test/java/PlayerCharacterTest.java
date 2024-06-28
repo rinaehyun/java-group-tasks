@@ -16,4 +16,17 @@ class PlayerCharacterTest {
         assertEquals( 0,actual);
     }
 
+
+    @Test
+    public void getYTest_whenStart_thenReturn0() {
+        //Given
+        int y = 0;
+
+        //When
+        int actual = PlayerCharacter.getY();
+
+        //Then
+        assertEquals( 0,actual);
+    }
+
 }
