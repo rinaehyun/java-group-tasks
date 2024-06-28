@@ -9,4 +9,11 @@ public class PlayerCharacter {
         return 0;
 
     }
+
+    public static int move(String key){
+        if(key == "w" || key == "W"){
+            return 1;
+        }
+        return 0;
+    }
 }

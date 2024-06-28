@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import static java.nio.file.Files.move;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerCharacterTest {
@@ -31,9 +32,9 @@ class PlayerCharacterTest {
     @Test
     public void moveTest_whenW_thenReturn1() {
         //Given
-        boolean w = true;
+        String key = "W";
         //When
-        int actual = move();
+        int actual = PlayerCharacter.move(key);
         //Then
         assertEquals(1, actual);
     }
