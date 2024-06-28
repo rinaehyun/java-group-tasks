@@ -1,12 +1,19 @@
 public class PlayerCharacter {
+    static int y=0;
+    static int x=0;
+
+   public static void main(String[] args) {
+    y+=move("w");
+    System.out.println(y);
+   }
 
     public static int getX() {
-        return 0;
+        return x=0;
 
     }
 
     public static int getY() {
-        return 0;
+        return y=0;
 
     }
 
