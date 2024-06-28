@@ -13,9 +13,8 @@ class PlayerCharacterTest {
         int actual = PlayerCharacter.getX();
 
         //Then
-        assertEquals( 0,actual);
+        assertEquals(0, actual);
     }
-
 
     @Test
     public void getYTest_whenStart_thenReturn0() {
@@ -26,7 +25,17 @@ class PlayerCharacterTest {
         int actual = PlayerCharacter.getY();
 
         //Then
-        assertEquals( 0,actual);
+        assertEquals(0, actual);
+    }
+
+    @Test
+    public void moveTest_whenW_thenReturn1() {
+        //Given
+        boolean w = true;
+        //When
+        int actual = move();
+        //Then
+        assertEquals(1, actual);
     }
 
 }
