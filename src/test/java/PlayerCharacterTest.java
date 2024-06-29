@@ -39,4 +39,13 @@ class PlayerCharacterTest {
         assertEquals(1, actual);
     }
 
+    @Test
+    public void moveTest_whenS_thenReturnMinus1() {
+        //Given
+        String key = "s";
+        //When
+        int actual = PlayerCharacter.move(key);
+        //Then
+        assertEquals(-1, actual);
+    }
 }
