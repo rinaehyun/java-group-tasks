@@ -39,4 +39,27 @@ class PlayerCharacterTest {
         assertEquals(1, actual);
     }
 
+
+    // Test when the input is right
+    @Test
+    public void moveLeftTest_whenA_thenReturnMinus1() {
+        //Given
+        String key = "A";
+        //When
+        int actual = PlayerCharacter.moveLeft(key);
+        //Then
+        assertEquals(-1, actual);
+    }
+
+    // Test when the input is wrong
+    @Test
+    public void moveLeftTest_whenB_thenReturn0() {
+        //Given
+        String key = "b";
+        //When
+        int actual = PlayerCharacter.moveLeft(key);
+        //Then
+        assertEquals(0, actual);
+    }
+
 }

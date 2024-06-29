@@ -3,8 +3,8 @@ public class PlayerCharacter {
     static int x=0;
 
    public static void main(String[] args) {
-    y+=move("w");
-    System.out.println(y);
+        y+=move("w");
+        System.out.println(y);
    }
 
     public static int getX() {
@@ -23,4 +23,12 @@ public class PlayerCharacter {
         }
         return 0;
     }
+
+    public static int moveLeft(String key) {
+       if (key == "a" || key == "A") {
+           return x -= 1;
+       }
+       return x;
+    }
+
 }
