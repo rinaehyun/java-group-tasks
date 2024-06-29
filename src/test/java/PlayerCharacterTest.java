@@ -34,9 +34,18 @@ class PlayerCharacterTest {
         //Given
         String key = "W";
         //When
-        int actual = PlayerCharacter.move(key);
+        boolean actual = PlayerCharacter.move(key);
         //Then
-        assertEquals(1, actual);
+        assertTrue( actual);
+    }
+    @Test
+    public void moveTest_whenD_thenReturn1() {
+        //Given
+        String key = "d";
+        //When
+        boolean actual = PlayerCharacter.move(key);
+        //Then
+        assertTrue( actual);
     }
 
 }
