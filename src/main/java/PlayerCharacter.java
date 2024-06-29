@@ -17,9 +17,12 @@ public class PlayerCharacter {
 
     }
 
-    public static int move(String key){
-        if(key == "w" || key == "W"){
+    public static int move(String key) {
+        if (key == "w" || key == "W") {
             return 1;
+        }
+        if (key == "s" || key == "S") {
+            return -1;
         }
         return 0;
     }
