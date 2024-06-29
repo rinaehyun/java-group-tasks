@@ -1,10 +1,20 @@
 public class PlayerCharacter {
-    static int y=0;
-    static int x=0;
+    static int y=3;
+    static int x=4;
 
    public static void main(String[] args) {
-    y+=move("w");
-    System.out.println(y);
+       System.out.println(x);
+        System.out.println(y);
+       System.out.println("getX "+getX());
+       System.out.println("getY "+getY());
+        System.out.println("d "+move("d"));
+        System.out.println("w "+move("w"));
+       System.out.println(x);
+       System.out.println(y);
+        System.out.println("s "+move("s"));
+        System.out.println("a "+move("a"));
+       System.out.println(x);
+       System.out.println(y);
    }
 
     public static int getX() {
@@ -17,10 +27,28 @@ public class PlayerCharacter {
 
     }
 
-    public static int move(String key){
+    public static boolean move(String key){
         if(key == "w" || key == "W"){
-            return 1;
+            y++;
+            return true;
+
         }
-        return 0;
+        if(key == "d" || key == "D"){
+            x++;
+            return true;
+
+        }
+        if(key == "a" || key == "A"){
+            x--;
+            return true;
+
+        }
+        if(key == "s" || key == "S"){
+            y--;
+            return true;
+
+        }
+
+        return false;
     }
 }
